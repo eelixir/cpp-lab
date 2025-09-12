@@ -155,7 +155,5 @@ int main() {
     zz = floor(xx);
     std::cout << zz << "\n";
 
-    
-
     return 0;
 }
