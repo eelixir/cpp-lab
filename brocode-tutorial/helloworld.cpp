@@ -103,7 +103,20 @@ int main() {
     int correct = 8;
     int questions = 10;
     double score = double(correct) / double(questions) * 100;
-    std::cout << score << "%";
+    std::cout << score << "%" << "\n";
+
+    // user input
+    std::string Name;
+    int Age;
+
+    std::cout << "What's your age?: ";
+    std::cin >> Age;
+
+    std::cout << "What is your full name?: ";
+    std::getline(std::cin >> std::ws, Name); // allows whitespace in string
+
+    std::cout << "Hello " << Name << '\n';
+    std::cout << "You are " << Age << " years old." << "\n";
 
     return 0;
 }
