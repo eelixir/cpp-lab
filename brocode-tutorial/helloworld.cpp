@@ -96,6 +96,14 @@ int main() {
     int remainder = students % 2;
     std:: cout << remainder << '\n';
 
+    // type conversion
+    char t = 100;
+    std::cout << t << '\n';
+
+    int correct = 8;
+    int questions = 10;
+    double score = double(correct) / double(questions) * 100;
+    std::cout << score << "%";
 
     return 0;
 }
