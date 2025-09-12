@@ -1,5 +1,7 @@
 #include <iostream>
+#include <vector>
 
+// namespace
 namespace first{
     std::string namespaceCheck = "first namespace";
 }
@@ -8,6 +10,11 @@ namespace second{
     std::string namespaceCheck = "second namespace";
 }
 
+// typedef
+// typedef std::string text_t;
+using text_t = std::string;
+
+// main function
 int main() {
     // This is a comment
     /*
@@ -15,13 +22,17 @@ int main() {
         multi-line
         comment
     */
+
+    // hello world
     std::cout << "Hello world!" << '\n';
 
+    // integers
     int x; // declaration
     x = 2; // assignment
     int y = 6; 
     int age = 18;
 
+    // terminal output (print)
     std::cout << x << '\n';
     std::cout << y << '\n';
 
@@ -57,9 +68,34 @@ int main() {
 
     // namespaces
     std::string namespaceCheck = "no namespace";
-    std:: cout << namespaceCheck << '\n';
-    std:: cout << first::namespaceCheck << '\n';
-    std:: cout << second::namespaceCheck << '\n';
+    std::cout << namespaceCheck << '\n';
+    std::cout << first::namespaceCheck << '\n';
+    std::cout << second::namespaceCheck << '\n';
+
+    // typedef
+    text_t firstname = "john";
+    std::cout << firstname << '\n';
+
+    // arithmetic operators
+    int students = 20;
+
+    students += 1;
+    students++;
+    
+    students -= 1;
+    students--;
+
+    students = students * 2;
+    students *= 2;
+    
+    students = students / 2;
+    students /= 2;
+    std::cout << students << '\n';
+
+    // modulus, remainder
+    int remainder = students % 2;
+    std:: cout << remainder << '\n';
+
 
     return 0;
 }
