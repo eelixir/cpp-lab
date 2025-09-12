@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 // namespace
 namespace first{
@@ -106,17 +107,55 @@ int main() {
     std::cout << score << "%" << "\n";
 
     // user input
-    std::string Name;
-    int Age;
+    // std::string Name;
+    // int Age;
 
-    std::cout << "What's your age?: ";
-    std::cin >> Age;
+    // std::cout << "What's your age?: ";
+    // std::cin >> Age;
 
-    std::cout << "What is your full name?: ";
-    std::getline(std::cin >> std::ws, Name); // allows whitespace in string
+    // std::cout << "What is your full name?: ";
+    // std::getline(std::cin >> std::ws, Name); // allows whitespace in string
 
-    std::cout << "Hello " << Name << '\n';
-    std::cout << "You are " << Age << " years old." << "\n";
+    // std::cout << "Hello " << Name << '\n';
+    // std::cout << "You are " << Age << " years old." << "\n";
+
+    // math functions
+    double xx = 3;
+    double yy = 4;
+    double zz;
+
+    zz = std::max(xx, yy);
+    std::cout << zz << "\n";
+
+    zz = std::min(xx, yy);
+    std::cout << zz << "\n";
+    
+    // power of
+    zz = pow(2, 3);
+    std::cout << zz << "\n";
+
+    // square root
+    zz = sqrt(9);
+    std::cout << zz << "\n";
+
+    // absolute value
+    zz = abs(-3);
+    std::cout << zz << "\n";
+
+    xx = 3.99;
+    // round
+    zz = round(xx);
+    std::cout << zz << "\n";
+
+    // ceiling, round up
+    zz = ceil(xx);
+    std::cout << zz << "\n";
+
+    // floor, round down
+    zz = floor(xx);
+    std::cout << zz << "\n";
+
+    
 
     return 0;
 }
