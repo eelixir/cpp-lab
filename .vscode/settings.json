@@ -51,5 +51,8 @@
         "text_encoding": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp"
+    },
+    "files.exclude": {
+        ".vscode": true
     }
 }
