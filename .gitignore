@@ -31,3 +31,12 @@
 *.exe
 *.out
 *.app
+
+# IDE files
+.vscode/
+
+# Virtual environments  
+venv/
+env/
+.venv/
+.env
