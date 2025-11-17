@@ -8,6 +8,12 @@ int main(){
     // & address-of operator
     // * dereference operator
 
+    std::string name = "Tom";
+
+    std::string *pName = &name;
+
+    std::cout << pName << '\n';
+    std::cout << *pName;
 
     return 0;
 }
